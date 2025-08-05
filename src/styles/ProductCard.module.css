@@ -1,3 +1,4 @@
+/* Product card's base styles */
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -6,21 +7,25 @@
   transition: box-shadow 0.2s ease;
 }
 
+/* Hover effect on page */
 .card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+/* Style changes for any out-of-stock product */
 .outOfStock {
   opacity: 0.5;
   border-color: #f44336;
   background-color: #fff5f5;
 }
 
+/* Style for in-stock product */
 .inStock {
   color: green;
   font-weight: bold;
 }
 
+/* Style changes for any out-of-stock product */
 .outOfStockText {
   color: red;
   font-weight: bold;

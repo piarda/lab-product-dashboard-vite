@@ -1,9 +1,9 @@
 import React from 'react';
-import ProductCard from './ProductCard';
+import ProductCard from './ProductCard';  // Imports ProductCard to display products
 
-const ProductList = ({ products }) => {
-  if (products.length === 0) {                                // Checks if the array is empty
-    return <p>No products available.</p>;
+const ProductList = ({ products }) => {     // Checks if product list is empty and shows message if so
+  if (products.length === 0) {
+    return <p>No products available.</p>;   // Displays message if there are no products
   }
 
   return (

@@ -1,5 +1,24 @@
 # Lab: Product Dashboard Manager
 
+This is a React-based e-commerce product dashboard. The dashboard allows users to view a list of products, and filter them by in-stock or out-of-stock. The dashboard is built with Material UI for styling and uses CSS Modules for component-level styling. Users can view the list of product cards with details such as name, price, and availability.
+
+SETUP:
+
+1. After cloning the project from GitHub, be sure to install dependencies via:
+   npm install
+
+2. Run the application locally via:
+   npm start
+
+3. Open your browser and visit http://localhost:5173/ to view the app.
+
+4. Run tests via:
+   npm test
+
+Thank you and enjoy!
+
+
+
 ## Introduction
 
 Your company is developing an **e-commerce platform**, and you have been assigned to create a **Product Dashboard**. This dashboard will dynamically display a list of products, allow users to filter products by availability, and apply **conditional rendering** to display different UI states.

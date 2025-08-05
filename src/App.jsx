@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
-import ProductList from './components/ProductList';
-import { Container, Button, Typography } from '@mui/material';
+import ProductList from './components/ProductList';  // Imports ProductList component
+import { Container, Button, Typography } from '@mui/material';   // Imports MUI components for styling
 
+
+// Initial product data array
 const App = () => {
   const products = [
     { id: 1, name: 'Laptop', price: 899.99, inStock: true },
@@ -13,10 +15,12 @@ const App = () => {
 
   const [showInStockOnly, setShowInStockOnly] = useState(false);
 
+  // Filter products based on showInStockOnly state. If true, only in-stock products are shown
   const filteredProducts = showInStockOnly
     ? products.filter(product => product.inStock)
     : products;
 
+  // Returns with Typography component, and button to toggle between "Show In-Stock Only" and "Show All Products"
   return (
     <Container maxWidth="md">
       <Typography variant="h3" align="center" gutterBottom>

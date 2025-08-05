@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from '../styles/ProductCard.module.css';
+import styles from '../styles/ProductCard.module.css';  // Import CSS Module for styling
 
 const ProductCard = ({ product }) => {
   const cardClass = product.inStock            // If product is out of stock, cardClass applies different style 
-    ? styles.card 
-    : `${styles.card} ${styles.outOfStock}`;
+    ? styles.card                              // Regular card style if it is in stock
+    : `${styles.card} ${styles.outOfStock}`;   // Applies 'outOfStock' class if not in stock
 
   return (
     <div className={cardClass}>
