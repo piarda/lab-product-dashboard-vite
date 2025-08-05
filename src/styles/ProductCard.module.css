@@ -1,3 +1,27 @@
-/* TODO: Style the product card container */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fafafa;
+  transition: box-shadow 0.2s ease;
+}
 
-/* TODO: Add special styling for out-of-stock products */
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.outOfStock {
+  opacity: 0.5;
+  border-color: #f44336;
+  background-color: #fff5f5;
+}
+
+.inStock {
+  color: green;
+  font-weight: bold;
+}
+
+.outOfStockText {
+  color: red;
+  font-weight: bold;
+}
